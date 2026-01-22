@@ -95,7 +95,7 @@ S0 = st.sidebar.number_input("Spot Price (S₀)", value=88000.0, step=1000.0)
 sigma = st.sidebar.number_input("Implied Volatility (%)", value=50, step=1)/100
 r_pct = st.sidebar.number_input("Risk-Free Rate (%)", value=3.5, step=0.25)
 days = st.sidebar.number_input("Days to Expiration", value=345, step=1)
-n_paths = st.sidebar.number_input("Monte Carlo Paths", value=10_000, step=1_000)
+n_paths = st.sidebar.number_input("Number of Simulated Paths", value=10_000, step=1_000)
 
 strike_input = st.sidebar.text_input(
     "Strike Prices (comma-separated)",
